@@ -13,7 +13,8 @@ const Models = ({modelPromise}) => {
                 to boost your productivity and creativity.</p>
             </div>
 
-            <div className='container mx-auto grid grid-cols-3 gap-3 mt-15'>
+         {/* card ar jonno map korlam akhane  */}
+            <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-15 px-4'>
                 {modelData.map(model => <ModelsCard key={model.id} model={model}></ModelsCard>)}
             </div>
 

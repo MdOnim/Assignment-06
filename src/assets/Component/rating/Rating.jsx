@@ -16,7 +16,7 @@ const Rating = () => {
     <div className="stat-desc text-white/80 text-lg mt-2 font-medium">Premium Tools</div>
   </div>
 
-  {/* Rating Section (সঠিক বানানসহ) */}
+  {/* Rating Section */}
   <div className="stat place-items-center transition-all duration-300 hover:-translate-y-2">
     <div className="stat-value text-5xl font-bold">4.9</div>
     <div className="stat-desc text-white/80 text-lg mt-2 font-medium">Rating</div>
