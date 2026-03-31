@@ -68,5 +68,26 @@
     "tag": "Trending",
     "features": ["1TB Cloud Storage", "End-to-end encryption", "Automatic sync"],
     "icon": "https://i.ibb.co.com/WN55Q3Wn/Cloud-Backup-Secure.png"
+  },
+
+  {
+    "id": 8,
+    "name": "SEO Cloud Suite",
+    "description": "Boost your website ranking with advanced keyword tracking and real-time site analytics.",
+    "price": 35,
+    "period": "Mo",
+    "tag": "Trending",
+    "features": ["Weekly SEO audits", "Keyword explorer", "Backlink checker"],
+    "icon": "https://i.ibb.co.com/DPCvJrHq/Premium-Asset-Library.png"
+  },
+  {
+    "id": 9,
+    "name": "Premium Asset Library",
+    "description": "Get access to 5000+ high-quality stock images, icons, and vector graphics for any project.",
+    "price": 55,
+    "period": "One-Time",
+    "tag": "New",
+    "features": ["Unlimited downloads", "Commercial license", "4K resolution"],
+    "icon": "https://i.ibb.co.com/HfY26v58/SEO-Cloud-Suite.png"
   }
 ]

@@ -8,6 +8,8 @@ import Navbar from './assets/Component/navBar/Navbar'
 import Rating from './assets/Component/rating/Rating'
 import Tabs from './assets/Component/tabs/Tabs'
 import Premiumdigital from './assets/Component/premiumDigital/Premiumdigital'
+import GetStarted from './assets/Component/getStarted/GetStarted'
+import SimplePricingSection from './assets/Component/simplePricingSection/SimplePricingSection'
 
 const getModels = async () => {
   const res = await fetch("/data.json")
@@ -34,6 +36,12 @@ const [cart, setCart] = useState([]);
     {activeTab === "Products" && <Models cart={cart} setCart={setCart} modelPromise ={modelPromise}></Models>}
     {activeTab === "Cart" && <Cartsection cart={cart} setCart={setCart}  ></Cartsection>}
     
+    <GetStarted></GetStarted>
+    <SimplePricingSection></SimplePricingSection>
+
+
+
+
     
     
 
