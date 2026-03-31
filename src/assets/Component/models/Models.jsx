@@ -5,7 +5,7 @@ const Models = ({modelPromise , cart , setCart}) => {
    
     // console.log(modelPromise);
     const modelData = use(modelPromise)
-    console.log(modelData);
+    // console.log(modelData);
     return (
         <div className='py-20'>
          {/* card ar jonno map korlam akhane  */}
