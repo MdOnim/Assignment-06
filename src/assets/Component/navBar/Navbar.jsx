@@ -37,10 +37,13 @@ const Navbar = () => {
   </div>
   <div className="navbar-end gap-2 lg:gap-4">
     <div className="flex items-center gap-1 lg:gap-2">
+
       <button className="btn btn-ghost btn-circle">
 
        <MdOutlineShoppingCart className='text-xl' />
+       
       </button>
+
       
       <a className="link link-hover font-medium hidden sm:block">Login</a>
     </div>
