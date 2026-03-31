@@ -8,6 +8,7 @@ const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
     const hadlePayment = () => {
         setCart([]);
+        toast.success('Successfully paid !');
     }
 
     const handleDelete = (itemDelete) => {

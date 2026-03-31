@@ -26,7 +26,7 @@ const [cart, setCart] = useState([]);
 
   return (
     <>
-     <Navbar></Navbar>
+     <Navbar ></Navbar>
      <Banner></Banner>
      <Rating></Rating>
      <Premiumdigital></Premiumdigital>

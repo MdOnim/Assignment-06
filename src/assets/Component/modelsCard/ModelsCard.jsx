@@ -7,6 +7,15 @@ const ModelsCard = ({model,cart , setCart}) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleSubscription = () => {
     setIsSubscribed(true);
+
+    const isFound = cart.find(cd => cd.id === model.id)
+    if(isFound){
+        toast.error('it is already in cart !');
+        return;
+    }
+
+
+
     setCart([...cart , model])
     toast.success('Successfully added to cart !');
 
