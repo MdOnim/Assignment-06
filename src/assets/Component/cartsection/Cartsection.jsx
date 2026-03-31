@@ -1,15 +1,31 @@
 import React from 'react';
 
-const Cartsection = ({cart}) => {
+const Cartsection = ({cart , setCart}) => {
     // console.log(cart);
 const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 // console.log(totalPrice);
+
+    const hadlePayment = () => {
+        setCart([]);
+    }
+
+    const handleDelete = (itemDelete) => {
+       const filteredArrray = cart.filter(cd => cd !== itemDelete);
+    //    console.log(filteredArrray);
+       setCart(filteredArrray);
+    }
+
     return (
         
 
 <div className="card bg-base-100 shadow-sm container mx-auto">
   <div className="card-body">
     <h2 className="card-title">Your Cart</h2>
+     {
+        cart.length === 0 && <div>
+            <p className='text-center'>No item in cart</p>
+        </div>
+    }
    <div className='space-y-4 '>
     {
         cart.map((item, index)=> <div key={index} className='flex justify-between bg-base-100 shadow-sm p-4'>
@@ -23,7 +39,7 @@ const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
             </div>
         </div>
         <div>
-            <button className='btn text-red-500'>Remove</button>
+            <button onClick={() => handleDelete(item)} className='btn text-red-500'>Remove</button>
         </div>
     </div>)
     }
@@ -37,7 +53,7 @@ const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
         </div>
     </div>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary w-full">Proceed to Checkout</button>
+      <button onClick={hadlePayment} className="btn btn-primary w-full">Proceed to Checkout</button>
     </div>
   </div>
 </div>

@@ -30,9 +30,9 @@ const [cart, setCart] = useState([]);
      <Banner></Banner>
      <Rating></Rating>
      <Premiumdigital></Premiumdigital>
-     <Tabs activeTab={activeTab} setActiveTab={setActiveTab}></Tabs>
+     <Tabs activeTab={activeTab} setActiveTab={setActiveTab} cart={cart}></Tabs>
     {activeTab === "Products" && <Models cart={cart} setCart={setCart} modelPromise ={modelPromise}></Models>}
-    {activeTab === "Cart" && <Cartsection cart={cart}  ></Cartsection>}
+    {activeTab === "Cart" && <Cartsection cart={cart} setCart={setCart}  ></Cartsection>}
 
     
     
