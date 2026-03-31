@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Cartsection = ({cart}) => {
-    console.log(cart);
+    // console.log(cart);
+const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+// console.log(totalPrice);
     return (
         
 
@@ -31,7 +33,7 @@ const Cartsection = ({cart}) => {
             <p>Total</p>
         </div>
         <div>
-            <p className='font-bold'>$29</p>
+            <p className='font-bold'>${totalPrice}</p>
         </div>
     </div>
     <div className="card-actions justify-end">
