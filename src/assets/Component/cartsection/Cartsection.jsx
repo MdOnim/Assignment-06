@@ -3,31 +3,49 @@ import React from 'react';
 const Cartsection = ({cart}) => {
     console.log(cart);
     return (
+        
+
 <div className="card bg-base-100 shadow-sm container mx-auto">
   <div className="card-body">
     <h2 className="card-title">Your Cart</h2>
    <div className='space-y-4 '>
-     <div className='flex justify-between bg-base-100 shadow-sm p-4'>
-        <div className=' flex '>
+    {
+        cart.map((item, index)=> <div key={index} className='flex justify-between bg-base-100 shadow-sm p-4'>
+        <div className=' flex gap-4 '>
             <div>
-                <img src="https://img.icons8.com/fluency/48/notepad.png" alt="" className="w-10 h-10"/>
+                <img src={item.icon} alt="" className="w-8 h-12 object-contain"/>
             </div>
             <div>
-                <p>AI Writing Pro</p>
-                <p>$29</p>
+                <p className='font-semibold'>{item.name}</p>
+                <p>${item.price}</p>
             </div>
         </div>
         <div>
             <button className='btn text-red-500'>Remove</button>
         </div>
-    </div>
+    </div>)
+    }
    </div>
-
+    <div className='flex justify-between p-1'>
+        <div>
+            <p>Total</p>
+        </div>
+        <div>
+            <p className='font-bold'>$29</p>
+        </div>
+    </div>
     <div className="card-actions justify-end">
       <button className="btn btn-primary w-full">Proceed to Checkout</button>
     </div>
   </div>
 </div>
+
+
+
+     
+     
+
+
     );
 };
 
