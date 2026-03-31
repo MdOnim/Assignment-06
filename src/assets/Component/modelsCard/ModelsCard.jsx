@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ModelsCard = ({model}) => {
+   const [isSubscribed, setIsSubscribed] = useState(false);
+
     const {name,description,icon,tag ,features} = model
     return (
         <div>
@@ -50,7 +52,14 @@ const ModelsCard = ({model}) => {
       
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block">Buy Now</button>
+      <button
+       onClick={()=>setIsSubscribed(true)}
+        // className="btn btn-primary btn-block">
+        className={`btn btn-primary btn-block ${isSubscribed?'btn-success ':'bg-primary'}`}>
+        {isSubscribed?'Added to Cart!':'Buy Now'}</button>
+
+
+
     </div>
   </div>
 </div>

@@ -1,7 +1,8 @@
-import React, { use } from 'react';
+import React, { use} from 'react';
 import ModelsCard from '../modelsCard/ModelsCard';
 
 const Models = ({modelPromise}) => {
+   
     console.log(modelPromise);
     const modelData = use(modelPromise)
     console.log(modelData);
