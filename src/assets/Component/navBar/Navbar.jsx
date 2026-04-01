@@ -23,7 +23,7 @@ const Navbar = ({cart}) => {
         <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a className="text-2xl lg:text-3xl font-bold text-secondary tracking-tight">DigiTools</a>
+    <a className="text-2xl lg:text-4xl font-bold text-[#8B2CFF]">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-2 text-base font-medium">
@@ -50,7 +50,7 @@ const Navbar = ({cart}) => {
       
       <a className="link link-hover font-medium hidden sm:block">Login</a>
     </div>
-    <a className="btn btn-sm lg:btn-md bg-gradient-to-r from-secondary to-primary text-white border-none rounded-full px-4 lg:px-6">
+    <a className="btn btn-sm lg:btn-md btn-primary text-white border-none rounded-full px-4 lg:px-6">
       Get Started
     </a>
   </div>

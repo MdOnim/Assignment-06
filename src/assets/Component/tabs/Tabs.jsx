@@ -2,11 +2,11 @@ import React from "react";
 
 const Tabs = ({setActiveTab,cart,activeTab}) => {
   return (
-    <div className="tabs tabs-box justify-center bg-transparent m-5 ">
+    <div className="tabs tabs-box justify-center bg-transparent m-5 gap-2 ">
       <input
         type="radio"
         name="my_tabs_1"
-        className={`tab rounded-full w-40 ${activeTab === "Products" && "bg-primary text-white"}`}
+        className={`tab  btn rounded-full w-40 ${activeTab === "Products" && "bg-primary text-white"}`}
         aria-label="Products"
         onClick={()=> setActiveTab("Products")}
         defaultChecked
@@ -14,7 +14,7 @@ const Tabs = ({setActiveTab,cart,activeTab}) => {
       <input
         type="radio"
         name="my_tabs_1"
-        className={`tab rounded-full w-40 ${activeTab === "Cart" && "bg-primary text-white"}`}
+        className={`tab btn rounded-full w-40 ${activeTab === "Cart" && "bg-primary text-white"}`}
         aria-label={`Cart(${cart.length})`}
         onClick={()=> setActiveTab("Cart")}
       />

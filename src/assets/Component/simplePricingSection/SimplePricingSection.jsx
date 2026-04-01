@@ -31,7 +31,7 @@ const SimplePricingSection = () => {
           <li class="flex items-center gap-3 text-gray-600 text-sm"><span class="text-green-500">✓</span> 1 project per month</li>
         </ul>
       </div>
-      <button class="w-full py-3 px-6 rounded-full bg-[#7C3AED] text-white font-semibold hover:opacity-90 transition-all mt-auto">
+      <button class=" w-full py-3 px-6 rounded-full bg-[#7C3AED] text-white font-semibold hover:opacity-90 transition-all mt-auto">
         Get Started Free
       </button>
     </div>
