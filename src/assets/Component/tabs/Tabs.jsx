@@ -2,7 +2,7 @@ import React from "react";
 
 const Tabs = ({setActiveTab,cart,activeTab}) => {
   return (
-    <div className="tabs tabs-box justify-center bg-transparent m-5 gap-2 ">
+    <div className="tabs justify-center bg-transparent m-5 gap-2 ">
       <input
         type="radio"
         name="my_tabs_1"

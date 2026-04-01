@@ -42,6 +42,7 @@ const [cart, setCart] = useState([]);
     <SimplePricingSection></SimplePricingSection>
     <Workflow> </Workflow>
     <Footer></Footer>
+    
 
 
 

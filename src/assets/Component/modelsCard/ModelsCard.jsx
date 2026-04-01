@@ -25,7 +25,7 @@ const ModelsCard = ({model,cart , setCart}) => {
         <div>
             {/* akhn theke models suru hobe */}
             
-    <div className="card w-96 bg-base-100 shadow-sm">
+    <div className="card m-2 bg-base-100 shadow-sm">
     
     <div className="card-body ">
    {/* Tag er name onujayi badge er color change korlam akhane  */}
